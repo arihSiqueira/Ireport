@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ThaiReport" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e4869b40-1ee9-4ee2-b3c1-7077db42aec6">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="firstName" class="java.lang.String"/>
+	<field name="lastName" class="java.lang.String"/>
+	<field name="id" class="java.lang.Long"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="29bcb0ca-66ad-4253-903f-ff60db567afa" x="157" y="0" width="257" height="38"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="20" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ทดสอบการออกรายงานภาษาไทยโดยใช้ ireport]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement uuid="baca3065-e0a8-4379-a93f-0a102d519db0" x="70" y="42" width="100" height="29"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="20" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firstName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3c7cb448-2be4-4e88-ab5c-eca60b0a149a" x="70" y="71" width="100" height="28"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="20" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lastName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="22ce3af6-ad18-48b8-819a-fbf5e0503828" x="0" y="40" width="70" height="31"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="20" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ชื่อ :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f59e760c-0c98-493b-9a6b-814339ee1ddd" x="0" y="71" width="70" height="32"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="20" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[นามสกุล :]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="30042329-d999-4f74-9863-716eeaa84924" x="70" y="13" width="100" height="27"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="20" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="7da26f48-44d9-4ba8-8837-71944dcce779" x="0" y="11" width="70" height="29"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="20" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[รหัส :]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

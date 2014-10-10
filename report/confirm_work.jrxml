@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="confirm_work" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c24acb58-489a-4a9e-81fb-64ddf35819cd">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="47"/>
+	<field name="writeplace" class="java.lang.String"/>
+	<field name="writedate" class="java.util.Date"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="position" class="java.lang.String"/>
+	<field name="office" class="java.lang.String"/>
+	<field name="address" class="java.lang.String"/>
+	<field name="startdate" class="java.util.Date"/>
+	<field name="enddate" class="java.util.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="129" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="b131b95a-97a8-4fd1-988c-6917361d4f49" x="374" y="55" width="28" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[เขียนที่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="82dbc674-eacd-46e8-aac4-623aa3e26535" x="374" y="75" width="28" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[วันที่]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="1f3ad6eb-deb1-45cf-8637-f61f81544560" x="402" y="55" width="118" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{writeplace}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="d5667e06-a90e-43e6-8dd7-7845b899f7ac" x="402" y="75" width="118" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{writedate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="27" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="4433006f-fd8f-4000-b61d-dc320b57b4e5" x="195" y="0" width="142" height="26"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="20" isBold="true" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[หนังสือรับรองการทำงาน]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="254" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="5a88d6dd-9b1b-40d7-8891-bbdd15c0c8ba" x="81" y="20" width="113" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ข้าพเจ้า นาย / นางสาว / นาง]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="3f3ee409-e02b-4320-b90a-2eead78bbfb5" mode="Transparent" x="194" y="20" width="167" height="20"/>
+				<textElement markup="none">
+					<font fontName="TH SarabunPSK" size="14" isStrikeThrough="false" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="9ea951b9-556a-4a67-a883-ae69d534b274" x="361" y="20" width="41" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ตำแหน่ง]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="c50fc74c-2ec4-43d5-984c-c22d4438e7b2" x="402" y="20" width="118" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{position}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d7711c4e-0cf3-4909-9b7f-0d268afe7784" x="56" y="40" width="109" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{office}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ad3dec19-4ff4-49ac-b5e0-01e02236edbc" x="165" y="40" width="55" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ซึ่งตั้งอยู่เลขที่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="81af83ec-f94e-4e66-bc3e-25d8186959b7" x="21" y="60" width="134" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ขอรับรองว่า นาย / นางสาว / นาง]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="80cec39c-10d2-4ac9-af0a-d8889a820d41" x="155" y="60" width="155" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d01069ec-8020-48b8-a384-69ded3fc9b88" x="379" y="60" width="141" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{office}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="7481102a-d0a2-4dc1-8233-aac1cfc20a8c" x="209" y="80" width="46" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ตั้งแต่ พ.ศ.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b880a830-0882-4d28-8c9f-9712b81930a3" x="322" y="80" width="47" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[จนถึง พ.ศ.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d2b22b1c-575b-4930-9667-e57bde912d0f" x="21" y="80" width="99" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[โดยปฏิบัติงานในตําแหน่ง]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="f20c4ed1-956b-46d6-b00b-32b03cf405ae" x="120" y="80" width="89" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{position}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="3295261d-03c2-4531-a76a-9e1ef39d7dc7" x="257" y="80" width="65" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{startdate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ca3c15c1-8e1d-4124-b811-4d24fe09138f" x="313" y="60" width="66" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ได้ปฏิบัติงานที่]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="401c3b7c-1730-47d0-b598-ea793523ef35" x="220" y="40" width="300" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c28310e8-26d3-417a-a659-c6113ce54790" x="42" y="122" width="326" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="16" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ขอรับรองว่าข้อความข้างตนเป็นความจริงทุกประการ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="92db328c-4279-4c76-b4f7-5cf4ad77cc34" x="326" y="157" width="194" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ลงชื่อ ................................................... ผู้รับรอง]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e67c3ae5-68d9-4b91-9f55-8653676766a1" x="348" y="177" width="166" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[( ................................................ )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="997308aa-33da-426b-8979-0c174086feef" x="352" y="194" width="21" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[วันที่ ...................................................................]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="a258ea17-c2fd-4055-83ea-9a4634cd879a" x="369" y="80" width="71" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{enddate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="7bc1bd2d-b9f0-4be6-af7c-a77763c2649d" x="21" y="40" width="34" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[สถานที่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="19e181be-472b-4013-b516-8449fc5dd573" x="195" y="25" width="166" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[........................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9074c2f-8e72-455e-be11-ef56c44dc6e2" x="402" y="25" width="118" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[.....................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="aa2105c2-9417-47de-b9e8-47e791855a72" x="56" y="45" width="109" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[.....................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ca02b5af-5b2e-4e32-bce5-cc7479ff4c27" x="220" y="45" width="300" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[...............................................................................................................................................................................................................................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="047ace18-2209-458d-8f7c-d0bdbf2ef116" x="155" y="65" width="155" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[.....................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3d7a6002-9fee-4a61-b349-a424cda0e6ec" x="379" y="65" width="141" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[.....................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="974ef17e-7cf6-46bf-b22f-975184554227" x="120" y="85" width="89" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[.....................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8a1b38b0-7aa4-4a9d-b516-20a8c75006d4" x="256" y="85" width="66" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[.....................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="47995574-a17c-453c-a40f-6f170bc44880" x="369" y="85" width="151" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[.....................................................................................................]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="a7528e0b-4edc-4af9-9bb2-b08b3fc6fe18" x="375" y="194" width="65" height="20"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{writedate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="71" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

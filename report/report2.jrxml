@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3bad2bd8-b52f-4e28-b17c-b42b4dfa1955">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="writeplace" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="position" class="java.lang.String"/>
+	<field name="office" class="java.lang.String"/>
+	<field name="address" class="java.lang.String"/>
+	<field name="writedate" class="java.util.Date"/>
+	<field name="startdate" class="java.util.Date"/>
+	<field name="enddate" class="java.util.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="5eaf0c55-64b1-41b5-a2fd-d1d9b73e19c0" x="193" y="53" width="142" height="26"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="20" isBold="true" pdfFontName="C:/Program Files (x86)/Jaspersoft/iReport-5.1.0/ireport/fonts/THSarabun.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[หนังสือรับรองการทำงาน]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
